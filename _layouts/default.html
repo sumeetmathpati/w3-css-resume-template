@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>{{ site.title }}</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -53,10 +53,10 @@
                         </p>
 
                         {% for skill in site.data.resume.skills %}
-                        <p>{{skill[0]}}</p>
+                        <p>{{ skill['skill_name'] }}</p>
                         <div class="w3-light-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:{{ skill[1] }}%">{{
-                                skill[1] }} %</div>
+                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:{{ skill['skill_level'] }}%">{{
+                                skill['skill_level'] }} %</div>
                         </div>
                         {% endfor %}
 
@@ -66,9 +66,9 @@
                                     class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
 
                         {% for language in site.data.resume.languages %}
-                        <p>{{ language[0] }}</p>
+                        <p>{{ language['language_name'] }}</p>
                         <div class="w3-light-grey w3-round-xlarge">
-                            <div class="w3-round-xlarge w3-teal" style="height:24px;width:{{ language[1] }}%"></div>
+                            <div class="w3-round-xlarge w3-teal" style="height:24px;width:{{ language['skill_level'] }}%"></div>
                         </div>
                         {% endfor %}
 
@@ -89,7 +89,8 @@
                     {% for workex in site.data.resume.work_experiance %}
                     <div class="w3-container">
                         <h5 class="w3-opacity"><b>{{ workex.title }}</b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>{{ workex.duration }}</h6>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>{{ workex.duration
+                            }}</h6>
                         <p>{{ workex.description }}</p>
                         <hr>
                     </div>
@@ -103,7 +104,8 @@
                     {% for edu in site.data.resume.education %}
                     <div class="w3-container">
                         <h5 class="w3-opacity"><b>{{ edu.title }}</b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>{{ edu.duration }}}}</h6>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>{{ edu.duration
+                            }}}}</h6>
                         <p>{{ edu.description }}</p>
                         <hr>
                     </div>

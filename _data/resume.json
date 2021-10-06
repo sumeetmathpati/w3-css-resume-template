@@ -1,0 +1,63 @@
+{
+    "name": "John Doe",
+    "address": "ABC, DEF",
+    "designation": "Software Developer",
+    "email": "jane@example.com",
+    "phone": 1234567890,
+    "skills": [
+        {
+            "skill_name": "C Programming",
+            "skill_level": 80
+        },
+        {
+            "skill_name": "Go Programming",
+            "skill_level": 90
+        },
+        {
+            "skill_name": "Algorithms",
+            "skill_level": 70
+        },
+        {
+            "skill_name": "AlgoriData Structuresthms",
+            "skill_level": 90
+        }
+    ],
+    "languages": [
+        {
+            "language_name": "English",
+            "skill_level": 80
+        },
+        {
+            "language_name": "Spanish",
+            "skill_level": 90
+        },
+        {
+            "language_name": "German",
+            "skill_level": 70
+        }
+    ],
+    "work_experiance": [
+        {
+            "title": "Front End Developer @ something.com",
+            "duration": "Jan 2015 - 2020",
+            "description": "Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste."
+        },
+        {
+            "title": "Web Developer @ something.com",
+            "duration": "Jan 2020 - Current",
+            "description": "Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste."
+        }
+    ],
+    "education": [
+        {
+            "title": "London Business School",
+            "duration": "Jan 2015 - 2020",
+            "description": "Master of Bussiness Administration"
+        },
+        {
+            "title": "School of Coding",
+            "duration": "Jan 2020 - Current",
+            "description": "Bachelor of Computer Science"
+        }
+    ]
+}
